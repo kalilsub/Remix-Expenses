@@ -1,5 +1,7 @@
-function UpdatedExpenses() {
-  return <div>UpdatedExpenses</div>
+import ExpenseForm from "../components/expenses/ExpenseForm"
+
+function UpdateExpensesPage() {
+  return <ExpenseForm />
 }
 
-export default UpdatedExpenses
+export default UpdateExpensesPage

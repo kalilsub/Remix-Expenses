@@ -43,6 +43,9 @@ module.exports = {
           { name: "NavLink", linkAttribute: "to" },
         ],
       },
+      rules: {
+        "react/prop-types": "off",
+      },
     },
 
     // Node
@@ -53,4 +56,4 @@ module.exports = {
       },
     },
   ],
-};
+}

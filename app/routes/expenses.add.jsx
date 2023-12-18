@@ -1,5 +1,7 @@
-function AddExpenses() {
-  return <div>AddExpenses</div>
+import ExpensesForm from "../components/expenses/ExpenseForm"
+
+function AddExpensesPage() {
+  return <ExpensesForm />
 }
 
-export default AddExpenses
+export default AddExpensesPage
