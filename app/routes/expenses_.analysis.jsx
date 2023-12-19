@@ -22,7 +22,7 @@ const DUMMY_EXPENSES = [
   },
 ]
 
-function Analytics() {
+function ExpensesAnalysisPage() {
   return (
     <main>
       <Chart expenses={DUMMY_EXPENSES} />
@@ -31,4 +31,4 @@ function Analytics() {
   )
 }
 
-export default Analytics
+export default ExpensesAnalysisPage

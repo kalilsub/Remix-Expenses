@@ -27,7 +27,7 @@ const DUMMY_EXPENSES = [
   },
 ]
 
-const Expenses = () => {
+const ExpensesLayout = () => {
   return (
     <>
       <Outlet />
@@ -38,4 +38,4 @@ const Expenses = () => {
   )
 }
 
-export default Expenses
+export default ExpensesLayout

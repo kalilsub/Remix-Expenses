@@ -1,5 +1,5 @@
-function RawExpenses() {
-  return <div>RawExpenses</div>
+function ExpensesRawPage() {
+  return <div>ExpensesRawPage</div>
 }
 
-export default RawExpenses
+export default ExpensesRawPage
