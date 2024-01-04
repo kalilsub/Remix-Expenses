@@ -11,7 +11,9 @@ export async function action({ request }) {
   const expenseData = Object.fromEntries(formData)
   try {
     validateExpenseInput(expenseData)
-  } catch (error) {}
+  } catch (error) {
+    return error
+  }
 
   await addExpense(expenseData)
   return redirect("/expenses")
