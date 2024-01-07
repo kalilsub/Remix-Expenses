@@ -3,13 +3,19 @@ import {
   useActionData,
   Form,
   useNavigation,
-  useLoaderData,
+  useMatches,
+  useParams,
 } from "@remix-run/react"
 
 function ExpenseForm() {
   const today = new Date().toISOString().slice(0, 10) // yields something like 2023-09-10
   const validationErrors = useActionData()
-  const expenseData = useLoaderData()
+  const params = useParams()
+  const matches = useMatches()
+  const expenses = matches.find(
+    (match) => match.id === "routes/_app.expenses"
+  ).data
+  const expenseData = expenses.find((expense) => expense.id === params.id)
   const navigation = useNavigation()
   const isSubmitting = navigation.state !== "idle"
 
