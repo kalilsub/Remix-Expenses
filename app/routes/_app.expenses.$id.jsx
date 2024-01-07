@@ -22,7 +22,7 @@ export const action = async ({ params, request }) => {
     return redirect("/expenses")
   } else if (request.method === "DELETE") {
     await deleteExpense(expenseId)
-    return redirect("/expenses")
+    return { deletedId: expenseId }
   }
 }
 
